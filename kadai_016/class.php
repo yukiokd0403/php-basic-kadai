@@ -19,15 +19,15 @@
       public function getName():string{
         return $this->name;
       }
-      public function getPrice():int{
-        return $this->price;
+      public function show_price(){
+        echo $this->price;
       }
       public function detail():string{
         return"Food:".$this->getName().",Price:".$this->getPrice()."円";
       }
       }
       $food=new Food('ジャガイモ',250);
-      echo $food->detail();
+      print_r($food);
     ?>
     </p>
     <p>
@@ -45,8 +45,8 @@
       public function getName():string{
         return $this->name;
       }
-      public function getHeight():int{
-        return $this->height;
+      public function show_height(){
+        echo $this->height;
       }
       public function getWeight():int{
         return $this->weight;
@@ -56,7 +56,7 @@
       }
     }
     $animal=new Animal('犬',1,10);
-    echo $animal->detail();
+    print_r($animal);
     ?>
     </p>
   </body>
